@@ -1,38 +1,93 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Saira+Stencil+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+.home__section {
+  width: 60%;
+  padding-top: 100px;
+  padding-left: 50px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.text-title h1 {
+  font-size: 13vw;
+  color: #b2b1bb;
+  font-family: 'Saira Stencil One', cursive;
+  line-height: 80%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.text-title h1 span {
+  color: black;
+  font-family: 'Saira Stencil One', cursive;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.text-title h4 {
+  margin-top: 10px;
+  color: black;
+  font-size: 1.5vw;
+  font-family: 'Roboto', sans-serif;
 }
 
-.App-link {
-  color: #61dafb;
+.img-title {
+  position: absolute;
+  top: 90px;
+  right: 5vw;
+  width: 20%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.img-title img {
+  width: 100%;
+  height: auto;
+}
+
+.btn-title {
+  margin-top: 4vw;
+
+}
+
+.btn-title a {
+  text-decoration: none;
+  font-size: 2vw;
+  font-family: 'Saira Stencil One', cursive;
+  color: black;
+}
+
+/* buutton effect */
+.button {
+  position: relative;
+  padding: 0.3em 1em;
+  background-color: transparent;
+  cursor: pointer;
+  margin: 1em 0.8em;
+}
+.button.type1 {
+  color:black;
+}
+.button.type1::after, .button.type1::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 20%;
+  height: 20%;
+  border: 2px solid;
+  transition: all 0.6s ease;
+  border-radius: 2px;
+}
+.button.type1.type1::after {
+  bottom: 0;
+  right: 0;
+  border-top-color: transparent;
+  border-left-color: transparent;
+  border-bottom-color: #566473;
+  border-right-color: #566473;
+}
+.button.type1.type1::before {
+  top: 0;
+  left: 0;
+  border-bottom-color: transparent;
+  border-right-color: transparent;
+  border-top-color: #566473;
+  border-left-color: #566473;
+}
+.button.type1.type1:hover:after, .button.type1.type1:hover:before {
+  width: 100%;
+  height: 100%;
 }
