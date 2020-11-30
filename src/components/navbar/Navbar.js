@@ -11,8 +11,8 @@ function Navbar() {
                         <Link to="/">TOPDEV</Link>
                     </div>
                     <ul className="menu-list">
-                        <li> <Link to="/about">ABOUT</Link> </li>
-                        <li> <Link to="/contact">CONTACT</Link> </li>
+                        <li> <Link to="/react-exam/about">ABOUT</Link> </li>
+                        <li> <Link to="/react-exam/contact">CONTACT</Link> </li>
                     </ul>
                 </div>
             </div>
